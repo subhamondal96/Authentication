@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Replace with your actual MySQL credentials
-DATABASE_URL = "mysql+pymysql://root:Subha1234@localhost/transglobal"
+DATABASE_URL = "mysql+pymysql://root:Pranab123%40@localhost/transglobal"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
