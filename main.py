@@ -63,7 +63,7 @@ def register(user_data: UserCreate, db: Session = Depends(get_db)):
 
 
 @app.post("/login", response_model=dict)
-def login(user_data: UserLogin, db: Session = Depends(get_db)): # type: ignore
+def login(user_data: UserLogin, db: Session = Depends(get_db)): 
     # Check if user exists
     user = db.query(User).filter(User.email == user_data.email).first()
     if not user:
@@ -77,7 +77,7 @@ def login(user_data: UserLogin, db: Session = Depends(get_db)): # type: ignore
     token = create_access_token({"sub": user.email})
 
     return {
-        "status": "success",
+        "status_code": 201,
         "message": "Login successful",
         "token": token,
         "user": {
