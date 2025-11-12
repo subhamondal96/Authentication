@@ -1,0 +1,40 @@
+# Virtual environment
+.venv/
+env/
+venv/
+*.pyc
+__pycache__/
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Environment variables
+.env
+.env.*
+*.log
+
+# Database files (if using SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Test coverage reports
+.coverage
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# PyInstaller / cx_Freeze
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other common exclusions
+*~
+*.bak
+*.swp
